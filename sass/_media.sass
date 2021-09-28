@@ -1,0 +1,969 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1459px)
+	.section-wrapper
+		max-width: 1200px
+	.header-search form
+		width: 200px
+	.subscribe-wrapper .subscribe-content,
+	.cta-content
+		max-width: 55%
+	.product
+		width: calc(100% / 4 - 26px)
+	.advantage-title
+		font-size: 28px
+		line-height: 30px
+	.tnp-field-privacy label
+		white-space: nowrap
+	.email_and_privacy
+		width: 350px
+@media only screen and (max-width : 1259px)
+	.section-wrapper
+		max-width: 960px
+	.top-bar
+		font-size: 20px
+	.header-menu li
+		margin: 0 8px
+		a
+			font-size: 16px
+	.categories-col:first-child
+		width: calc(100% / 3 - 10px)
+	.categories-col:last-child
+		width: calc(100% / 3 * 2 - 10px)
+	.categories-row
+		flex-direction: column
+		margin-bottom: 0!important
+		.categories-item
+			width: 100%!important
+			margin-bottom: 20px
+			height: 230px
+	.categories-col:first-child .categories-item
+		height: 480px
+		padding-top: 50px
+	.categories-row:last-child
+		margin-left: -310px
+		flex-direction: row-reverse
+		align-items: flex-start
+		.categories-item:first-child
+			width: calc(100% / 3 - 10px)!important
+			margin-bottom: 0
+		.categories-item:last-child
+			width: calc(100% / 3 * 2 - 10px)!important
+			height: 405px
+			padding: 50px 0 50px 35px
+			margin-bottom: 0
+	.advantages-wrapper
+		flex-wrap: wrap
+	.advantages-item
+		width: calc(100% / 2 - 20px)
+	.advantage-header
+		margin-bottom: 45px
+	.advantages-item .advantage-content
+		top: 445px
+	.advantages-item .advantage-content-header
+		flex-wrap: wrap
+	.advantages-item .advantage-content-title
+		margin-bottom: 10px
+	.cta-wrapper
+		flex-direction: column-reverse
+		padding-bottom: 45%
+	.cta-content, .subscribe-wrapper .subscribe-content
+		max-width: 100%
+	.product
+		width: calc(100% / 3 - 26px)
+	.filter
+		width: calc(100% / 2 - 26px)
+		margin-bottom: 52px
+	.filters-wrapper
+		flex-wrap: wrap
+	.subscribe-wrapper
+		padding: 75px 50px
+		padding-bottom: 75%
+	.footer-wrapper
+		flex-wrap: wrap
+	.footer-col:nth-child(1)
+		width: 50%
+		order: 1
+	.footer-col:nth-child(2)
+		width: 100%
+		order: 3
+	.footer-col:nth-child(3)
+		width: 50%
+		order: 2
+	.footer-bottom
+		line-height: 1.5
+		align-items: flex-start
+		flex-wrap: wrap
+		justify-content: center
+	.footer-bottom a
+		margin-left: 15px
+		margin-right: 15px
+		text-decoration: underline
+@media only screen and (max-width : 959px)
+	.section-wrapper
+		max-width: 768px
+	.categories-row:last-child
+		margin-left: -245px
+	.categories-row:last-child .categories-item:first-child,
+	.categories-row:last-child .categories-item:last-child
+		width: calc(100% / 2 - 10px)!important
+	.categories-row:last-child .categories-item:last-child .categorie-image
+		margin-right: -300px
+	.categorie-title
+		font-size: 20px!important
+		line-height: 1.5!important
+	.advantages-item .advantage-content-text ul li
+		width: calc(100% / 2 - 56px)
+	.cta-wrapper
+		padding: 50px
+		padding-bottom: 55%
+	.products-wrapper .product
+		width: calc(100% / 2 - 26px)
+	.subscribe-wrapper
+		padding-bottom: 100%
+	.mobile-menu
+		display: block
+		position: fixed
+		left: 0
+		transform: translatex(200%)
+		width: calc(100vw - 30px)
+		transition: all .3s ease
+		background-color: #fff
+		z-index: 99
+		height: 110vh
+		padding-top: 40px
+		.header-menu
+			display: block
+			margin-top: 60px
+			margin-bottom: 30px
+			li
+				margin: 0 0 18px 0
+				a
+					font-size: 24px
+					line-height: 28px
+		.footer-menu
+			li
+				margin-bottom: 5px
+				a
+					font-size: 18px
+					line-height: 150%
+					color: #4F4F4F
+		.footer-title
+			font-weight: bold
+			font-size: 20px
+			line-height: 140%
+			color: #E88368
+			margin-bottom: 10px
+		&:after
+			position: absolute
+			left: 100%
+			height: 100%
+			width: 30px
+			background-color: rgba(0, 0, 0, 0.19)
+			content: ''
+			top: 0
+	.header-menu-button
+		display: flex
+		align-items: center
+		justify-content: center
+		min-width: 23px
+		margin-right: 25px
+		order: 1
+	.header-menu
+		display: none
+	.header-button
+		span
+			height: 2px
+			display: block
+			background-color: $accent
+			&:nth-child(1)
+				width: 23px
+			&:nth-child(2)
+				width: 23px
+				margin: 5px 0
+			&:nth-child(3)
+				width: 12px
+	.menuOpen
+		overflow: hidden
+		.mobile-menu
+			transform: unset
+	.header
+		background-color: #fff
+	body
+		&:not(.onScroll)
+			.header
+				box-shadow: none
+		&.onScroll
+			.header-search
+				margin-top: 15px
+	.header-wrapper
+		justify-content: space-between
+		flex-wrap: wrap
+	.header-logo
+		display: block
+		margin-left: 0
+		margin-right: auto
+		order: 2
+	.header-search
+		order: 4
+		width: 100%
+		margin-top: 42px
+		transition: all .3s ease
+		form
+			width: 100%
+	.header-info
+		order: 3
+	.top-bar
+		font-weight: 500
+		font-size: 16px
+		line-height: 130%
+		padding: 17px 0
+	.top-wrapper+*
+		margin-top: 226px
+	.categories-wrapper
+		flex-wrap: wrap
+	.categories-col
+		width: 100%!important
+		.categories-item
+			width: 100%!important
+			margin-bottom: 28px
+			height: 232px!important
+			min-height: unset!important
+	.categories-row:last-child
+		flex-direction: column
+		margin: 0!important
+	.categories-row:last-child .categories-item:first-child, .categories-row:last-child .categories-item:last-child
+		width: 100%!important
+		margin-bottom: 28px
+	.categories-col:first-child .categories-item
+		display: flex
+		flex-direction: row-reverse
+		align-items: center
+		padding: 0 0 0 120px
+		.categorie-image
+			position: absolute
+			width: 169px
+			left: -20px
+		.categorie-title
+			position: relative
+			text-align: left
+			font-size: 22px
+			line-height: 27px
+		.categorie-bg
+			bottom: 0
+			left: 0
+			width: 173px
+	.categories-row:first-child .categories-item:first-child
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		padding: 36px 120px 0 30px
+		.categorie-title
+			text-align: left
+			font-size: 22px
+			line-height: 27px
+		.categorie-image
+			position: absolute
+			width: 169px
+			right: -30px
+			bottom: 5px
+			min-width: unset
+		.categorie-bg
+			left: unset
+			right: -35px
+			bottom: -80px
+	.categories-row:first-child .categories-item:last-child
+		display: flex
+		flex-direction: row-reverse
+		align-items: center
+		padding: 0 0 0 138px
+		.categorie-image
+			position: absolute
+			width: 169px
+			left: -20px
+			min-width: unset
+		.categorie-title
+			position: relative
+			text-align: left
+			font-size: 22px
+			line-height: 27px
+			margin-right: 0
+		.categorie-bg
+			bottom: -15px
+			left: -20px
+			width: 173px
+			transform: rotate(90deg)
+	.categories-row:last-child .categories-item:last-child
+		order: 1
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		padding: 36px 130px 0 30px
+		.categorie-title
+			text-align: left
+			font-size: 22px
+			line-height: 27px
+		.categorie-image
+			position: absolute
+			width: 148px
+			right: 0
+			bottom: 7px
+			min-width: unset
+			margin-right: 0
+		.categorie-bg
+			left: unset
+			right: -35px
+			bottom: -80px
+	.categories-row:last-child .categories-item:first-child
+		order: 2
+		display: flex
+		flex-direction: row-reverse
+		align-items: center
+		padding: 0 0 0 120px
+		.categorie-image
+			position: absolute
+			width: 95px
+			left: 15px
+			bottom: 25px
+
+			min-width: unset
+		.categorie-title
+			position: relative
+			text-align: left
+			font-size: 22px
+			line-height: 27px
+			margin-right: 0
+		.categorie-bg
+			bottom: 0
+			left: -25px
+			width: 173px
+			transform: rotate(90deg)
+	.categories
+		padding-bottom: 30px
+	.section-title
+		font-weight: bold
+		font-size: 30px
+		line-height: 37px
+		text-align: center
+		color: #4F4F4F
+		margin: 0 -15px
+		margin-bottom: 50px
+	.advantages-wrapper
+		padding-bottom: 0!important
+	.advantages-item
+		width: 100%
+	.advantages-item .advantage-content
+		position: relative
+		top: unset
+		left: unset
+		padding: 40px 27px
+		min-height: unset!important
+		margin-bottom: 52px
+	.advantage-header
+		margin-bottom: 34px
+		height: unset
+		padding-bottom: 10px
+	.advantage-icon
+		width: 46px
+		height: 46px
+		min-height: 46px
+		margin-top: -23px
+		margin-bottom: 18px
+		img
+			width: 23px
+	.advantage-title
+		min-height: unset
+		padding-top: 0
+		margin-top: 0
+		font-size: 28px
+		line-height: 34px
+		margin-bottom: 5px
+	.advantage-subtitle
+		font-size: 18px
+		line-height: 21px
+		margin-bottom: 19px
+	.advantages-item .advantage-content-title
+		text-align: left
+		font-size: 22px
+		line-height: 27px
+		margin-right: 0
+		margin-bottom: 15px
+	.advantages-item .advantage-content-subtitle
+		font-size: 18px
+		line-height: 21px
+		margin-bottom: 12px
+		color: #828282
+	.advantages-item .advantage-content-header
+		margin-bottom: 0
+	.advantages-item .advantage-content-text ul
+		margin: 0
+		li
+			width: 100%
+			margin-bottom: 12px
+			margin-right: 0
+			margin-left: 0
+			&:before
+				width: 10px
+				height: 10px
+				min-width: 10px
+				margin-right: 10px
+	.advantages-item .advantage-content-text
+		font-size: 18px
+		line-height: 21px
+		color: #828282
+	.advantages-item.disabled .advantage-header
+		background: #DAE4EF
+		border-radius: 10px
+		box-shadow: none
+	.advantages
+		margin-bottom: 70px
+	.cta
+		margin-top: 70px
+		margin-bottom: 120px
+	.cta-wrapper
+		padding: 40px 16px 213px 30px
+	.cta-title
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 15px
+	.cta-text
+		font-size: 18px
+		line-height: 140%
+	.cta-image img
+		&:first-child
+			transform: rotate(-90deg)
+			right: -30px
+			left: unset
+			width: 250px
+	.cta-image img:last-child
+		width: 357px
+		right: -60px
+		left: unset
+		bottom: -28px
+	.products
+		margin-top: 120px
+		margin-bottom: 120px
+	.products-wrapper .product
+		width: calc(100% / 2 - 9px)
+		margin: 0 4.5px
+	.products-wrapper
+		margin: 0 -4.5px
+	.product
+		.product-top
+			padding: 24px 14px
+			height: 309px
+		.product-title
+			font-size: 18px
+			line-height: 22px
+			min-height: 66px
+			margin-bottom: 5px
+		.product-info
+			font-size: 18px
+			line-height: 22px
+		.product-image
+			height: 110px
+			margin: 22px 0
+			img
+				max-height: 100%
+		.product-price
+			font-size: 18px
+			line-height: 22px
+			white-space: nowrap
+			span.full
+				font-size: 16px
+				line-height: 20px
+		.product-bottom
+			padding: 18px 10px
+			height: 134px
+		.product-per
+			font-size: 15px
+			line-height: 20px
+			margin-bottom: 14px
+		.main-btn
+			font-weight: 500
+			font-size: 16px
+			line-height: 20px
+			padding: 7px 0
+	.delivery-wrapper
+		transition: all .3s ease
+	.delivery
+		width: calc(100vw - 60px)
+		right: 30px
+		bottom: 30px
+		padding: 34px 20px 11px
+		&.hidden
+			.delivery-wrapper
+				height: 37px
+				overflow: hidden
+			.delivery-hide
+				span:first-child
+					display: none
+				span:last-child
+					display: block
+	.delivery-hide
+		display: flex
+		position: absolute
+		width: 19px
+		height: 19px
+		top: 8px
+		left: 21px
+		align-items: center
+		justify-content: center
+		span:last-child
+			display: none
+	.delivery-header
+		border-top: 1px solid #fff
+		padding-top: 15px
+		margin-top: 0
+		font-size: 16px
+		line-height: 21px
+		& > div
+			display: flex
+			align-items: flex-start
+		svg
+			margin-right: 10px
+	.delivery-title
+		margin-top: -49px
+		font-size: 18px
+		line-height: 21px
+	.delivery-progress
+		margin: 9px 0
+	.delivery-footer
+		font-weight: 400
+	.product.on-cart .product-add .quantity
+		margin-top: 17px
+	.product.on-cart .product-add .quantity input
+		font-size: 26px
+		line-height: 31px
+		width: 58px
+	.product.on-cart .product-add .quantity .minus-btn, .product.on-cart .product-add .quantity .plus-btn
+		width: 16px
+		height: 16px
+		display: flex
+		align-items: center
+		justify-content: center
+	.product .product-stock
+		padding: 8px
+		font-size: 14px
+		line-height: 1
+		top: 65%
+	.product .product-label
+		display: none
+	section
+		position: relative
+		overflow: hidden
+	footer
+		position: relative
+		overflow: hidden
+	.filter
+		width: 100%
+		margin-bottom: 28px
+		padding: 40px 28px
+		&:last-child
+			margin-bottom: 0
+		.filter-title
+			font-size: 22px
+			line-height: 27px
+			margin-bottom: 14px
+		.filter-list li
+			margin-bottom: 10px
+			a
+				font-size: 18px
+				line-height: 21px
+	.subscribe-wrapper
+		padding: 40px 20px 262px
+	.subscribe-wrapper .subscribe-content
+		font-size: 18px
+		line-height: 140%
+	.email_and_privacy
+		width: 100%
+		flex-wrap: wrap
+	.email_and_privacy .tnp-email
+		font-size: 18px
+		line-height: 140%
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		margin-bottom: 17px
+	.tnp-field-button input
+		margin: 0 auto
+		max-width: 400px
+		width: 100%
+	.tnp-field-button
+		width: 100%
+	.tnp-field-privacy label
+		white-space: normal
+		align-items: flex-start
+	.tnp-field-privacy label span
+		flex-direction: column
+		font-size: 16px
+		line-height: 140%
+		text-transform: lowercase
+		a
+			margin-left: 0
+			color: #FFCCBC
+	.subscribe-wrapper .subscribe-image img
+		&:first-child
+			width: 221px
+			left: 0
+			bottom: 0
+		&:last-child
+			width: 207px
+	.subscribe
+		margin: 120px 0
+	.footer
+		padding-top: 50px
+	.footer-title
+		font-size: 20px
+		line-height: 140%
+		margin-bottom: 10px
+	.footer-list li
+		font-size: 18px
+		line-height: 27px
+		margin-bottom: 5px
+		width: 100%!important
+		margin-right: 0
+		a
+			font-size: 18px!important
+			line-height: 27px!important
+	.footer-col:nth-child(2)
+		width: calc(100% - 30px)
+	.footer-col:nth-child(1)
+		width: 104px
+		order: 2
+	.footer-col:nth-child(3)
+		order: 1
+	.footer-wrapper
+		margin-right: -30px
+	.footer-col:nth-child(3) .footer-list li, .footer-col:nth-child(3) .footer-list li a
+		font-size: 18px!important
+		line-height: 27px!important
+	.footer-list
+		margin-bottom: 15px
+	.footer-col:nth-child(2)
+		margin-top: 30px
+	.footer-bottom
+		margin-top: 35px
+		padding-top: 35px
+	.footer-bottom a
+		margin: 0
+	.category-wrapper
+		padding: 40px 25px 220px
+	.category-title
+		font-size: 22px
+		line-height: 27px
+		margin-bottom: 15px
+	.category-text
+		font-size: 18px
+		line-height: 135%
+	.category-image
+		width: 230px
+		height: 240px
+		display: flex
+		align-items: flex-start
+		justify-content: flex-end
+		img
+			margin-top: auto
+	.category.inversed .category-wrapper
+		padding: 40px 25px 220px
+	.category-text ul li
+		width: 100%
+		margin-bottom: 30px
+		p
+			font-size: 18px
+			line-height: 135%
+	.category-text .list-title
+		font-size: 22px
+		line-height: 135%
+		margin-bottom: 20px
+	.subscribe-wrapper .subscribe-content:only-child
+		flex-direction: column
+		padding: 0 25px
+		p
+			width: 100%
+			margin-bottom: 35px
+	.tnp-field-button input
+		padding: 14px 0
+	.category-footer, .category, .subscribe
+		margin: 60px 0
+	.breadcrumbs
+		padding-top: 34px
+	.card-title
+		font-size: 30px
+		line-height: 150.9%
+	.card-header
+		width: 100%
+		order: 1
+	.card-image
+		order: 2
+		width: 100%
+		margin: 42px 0
+	.card-volume
+		font-size: 24px
+		line-height: 150.9%
+	.card-delivery
+		min-width: unset
+		width: 100%
+		flex-wrap: wrap
+		padding: 30px 10px 15px 10px
+		font-size: 18px
+		line-height: 150.9%
+		order: 4
+		.card-delivery__image
+			margin-left: auto
+	.card-add
+		order: 3
+		width: 100%
+		min-width: unset
+	.card-info
+		order: 5
+		min-width: unset
+		width: 100%
+	.card-taste
+		order: 6
+	.card-select
+		display: none
+	.card-price
+		flex-wrap: wrap
+		span:first-child
+			font-size: 30px
+			line-height: 150.9%
+	.card-price span:last-child
+		font-size: 24px
+		line-height: 150.9%
+	.card-buttons .product-add .quantity .minus-btn, .card-buttons .product-add .quantity .plus-btn
+		width: 45px
+		height: 45px
+	.card-buttons .product-add .quantity input
+		width: 52px
+	.card-buttons .product-add
+		flex-wrap: wrap
+	.card-buttons .product-add .quantity
+		margin-bottom: 32px
+		margin-right: 15px
+	.card-buttons .product-add .main-btn
+		margin-bottom: 32px
+		padding: 11px 36px 12px
+	.card-buttons
+		margin-bottom: 0
+	.card-description
+		margin-bottom: 37px
+	.card-info__nav
+		justify-content: center
+	.card-info__box ul li
+		padding: 12px 0
+	.card-info__box ul li span:first-child,
+	.card-info__box ul li span:last-child
+		font-size: 16px
+		line-height: 150.9%
+		width: 50%
+		white-space: normal
+	.slick-prev, .slick-next
+		z-index: 99
+	.slick-prev
+		left: 0
+	.slick-next
+		right: 0
+	.slick-prev:before
+		width: 20px
+		height: 30px
+		content: ''
+		background-size: 20px 30px
+		z-index: 99
+		opacity: 1!important
+		display: block
+		background-image: url(../img/arrow.svg)
+	.slick-next:before
+		width: 20px
+		height: 30px
+		content: ''
+		background-size: 20px 30px
+		z-index: 99
+		opacity: 1!important
+		display: block
+		background-image: url(../img/arrow_right.svg)
+	.card-taste__col, .card-taste__row
+		width: 100%
+		padding: 23px
+		&.active
+			.card-taste__content
+				display: block
+			.card-taste__title
+				margin-bottom: 4px
+				svg
+					transform: rotate(180deg)
+	.card-taste__title
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 20px
+		line-height: 120%
+		margin-bottom: 0
+		svg
+			display: block
+	.card-taste__content
+		display: none
+		ul
+			margin-top: 20px
+			li
+				width: 100%
+	.section-title
+		text-align: center!important
+	.review-item
+		padding: 23px 20px
+		align-items: flex-start
+	.seo
+		padding-top: 42px
+	.seo-content h1
+		font-size: 30px
+		line-height: 37px
+	.seo-menu
+		max-width: 100%
+
+	.seo-delivery
+		flex-wrap: wrap
+		border: 0
+		margin: 0
+		.seo-delivery__item
+			width: 100%
+			position: relative
+			margin: 0
+			top: unset
+			left: unset
+			right: unset
+			transform: unset
+			padding-left: 52px
+			margin-bottom: 18px
+			font-weight: normal
+			font-size: 18px
+			line-height: 150.9%
+			.seo-delivery__text
+				br
+					display: none
+			&:last-child
+				&::after
+					display: none
+			&::after
+				content: ''
+				height: 100%
+				position: absolute
+				border-left: 1px dotted $second
+				left: 16px
+				top: 25px
+				width: 1px
+		.seo-delivery__icon
+			position: absolute
+			top: -2px
+			width: 33px
+			height: 33px
+			min-width: 33px
+			left: 0
+			img
+				width: 15px
+	.seo-content p
+		font-weight: normal
+		font-size: 18px
+		line-height: 150.9%
+		color: #4F4F4F
+	.seo-warning
+		padding: 20px
+	.seo-history__item
+		width: 100%
+		position: relative
+		margin: 0
+		top: unset
+		left: unset
+		right: unset
+		transform: unset
+		padding-left: 52px
+		margin-bottom: 18px
+		font-weight: normal
+		font-size: 18px
+		line-height: 150.9%
+		&::after
+			content: ''
+			height: calc(100% + 20px)
+			left: 16px
+		.seo-history__icon
+			position: absolute
+			top: 0px
+			width: 33px
+			height: 33px
+			min-width: 33px
+			left: 0
+			img
+				width: 15px
+	.seo-history__content
+		margin-bottom: 30px
+	.seo-content .table-col
+		width: 100%
+	.seo-content .table-wrapper
+		padding: 22px
+	.seo-content .grid-wrapper p
+		text-align: center
+	.seo-content .grid-wrapper
+		padding: 22px 13px
+	.seo-content .grid-layout .grid-item
+		width: 100%!important
+		padding: 12px
+	.seo-faq__question
+		margin-left: 18px
+	.seo-faq__answer
+		margin-right: 18px
+		p
+			line-height: 1.3
+	.seo-history__item .seo-history__icon
+		font-size: 18px
+		line-height: 1.2
+	.seo-steps
+		.seo-steps__item
+			width: 100%
+			max-width: 500px
+			margin: 0 0 20px 0
+			text-align: center
+			padding: 12px
+			justify-content: center
+			background-color: #fff
+			position: relative
+			z-index: 2222
+			order: 1
+			&:last-child
+				&::after
+					display: none
+			&::after
+				content: ''
+				background-image: url(../img/step_arrow.svg)
+				width: 15px
+				background-position: right bottom
+				height: 8px
+				position: absolute
+				right: unset
+				left: 50%
+				top: unset
+				bottom: -15px
+				transform: translateX(-50%) rotate(90deg)
+				z-index: -1
+	.seo-payment__item
+		width: 100%
+		max-width: 400px
+		margin-right: 0
+		padding-bottom: 15px
+	.seo-payment__item p
+		margin-bottom: 10px
+	
+@media only screen and (max-width : 767px)
+	/**/
+@media only screen and (max-width : 479px)
+	/**/
+/*==========  Mobile First  ==========*/
+
+@media only screen and (min-width : 480px)
+	/**/
+@media only screen and (min-width : 768px)
+	/**/
+@media only screen and (min-width : 992px)
+	/**/
+@media only screen and (min-width : 1200px)
+	/**/
